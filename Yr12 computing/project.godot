@@ -18,9 +18,12 @@ config/icon="res://otherart/exitbutton.png"
 
 Player="*res://scripts/player.gd"
 Enemy="*res://scripts/enemy.gd"
+global="*res://scenes/dirttrack.gd"
 
 [display]
 
+window/size/width=1500
+window/size/height=900
 window/size/fullscreen=true
 window/stretch/mode="2d"
 

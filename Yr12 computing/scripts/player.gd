@@ -9,16 +9,16 @@ func _process(_delta):
 	var direction = 0
 	
 	if Input.is_action_pressed("ui_left") && Input. is_action_pressed("ui_up"):
-		direction = -1
+		direction = -0.5
 	
 	if Input.is_action_pressed("ui_left") && Input. is_action_pressed("ui_down"):
-		direction = 1
+		direction = 0.5
 	
 	if Input.is_action_pressed("ui_right") && Input. is_action_pressed("ui_up"):
-		direction = 1
+		direction = 0.5
 	
 	if Input.is_action_pressed("ui_right") && Input. is_action_pressed("ui_down"):
-		direction = -1
+		direction = -0.5
 	
 	rotation += angular_speed * direction * _delta
 	
