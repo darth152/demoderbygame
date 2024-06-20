@@ -2,11 +2,18 @@ extends KinematicBody2D
 
 var angular_speed = PI
 var speed = 400.0
-var playerhealth = 0
+var playerhealth = 5
+var screen_shake = 0
+var shake_mode = 0
+var GLOBAL_p_pos = position
+
 
 func _process(_delta):
 	var velocity = Vector2()
 	var direction = 0
+	
+	if playerhealth < 0:
+		get_tree().quit()
 	
 	if Input.is_action_pressed("ui_left") && Input. is_action_pressed("ui_up"):
 		direction = -0.5
@@ -40,4 +47,5 @@ func _process(_delta):
 
 func _on_siderails_area_entered(area):
 	if area.is_in_group("enemy bumper"):
+		print("hit")
 		playerhealth += -1

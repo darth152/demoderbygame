@@ -5,7 +5,7 @@ var player_position
 var target_position
 onready var player = get_parent().get_node("Player")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	player_position = player.position
 	target_position = (player_position - position).normalized()

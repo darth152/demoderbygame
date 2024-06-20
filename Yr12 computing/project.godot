@@ -11,19 +11,18 @@ config_version=4
 [application]
 
 config/name="Yr12 computing"
-run/main_scene="res://scenes/dirttrack.tscn"
+run/main_scene="res://scenes/startscreen.tscn"
 config/icon="res://otherart/exitbutton.png"
 
 [autoload]
 
 Player="*res://scripts/player.gd"
 Enemy="*res://scripts/enemy.gd"
-global="*res://scenes/dirttrack.gd"
 
 [display]
 
-window/size/width=1500
-window/size/height=900
+window/size/width=1750
+window/size/height=1050
 window/size/fullscreen=true
 window/stretch/mode="2d"
 
