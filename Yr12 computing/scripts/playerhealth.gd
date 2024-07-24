@@ -1,15 +1,14 @@
 extends Label
 
-
+var damage = 0
+var currenthealth = Player.playerhealth - damage
 
 func _process(_delta):
-	#displays health
-	self.text = str(Player.playerhealth)
+	#displays playerhealth
+	self.text = str(currenthealth)
 	
 	
-func _ready():
-	#sets health to 5 on game start
-	Player.playerhealth = 5
+
 
 
 

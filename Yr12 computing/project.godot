@@ -18,6 +18,9 @@ config/icon="res://otherart/exitbutton.png"
 
 Player="*res://scripts/player.gd"
 Enemy="*res://scripts/enemy.gd"
+settings="*res://scripts/startscreen.gd"
+Play="*res://scripts/play.gd"
+phealth="*res://scripts/playerhealth.gd"
 
 [display]
 
